@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HotCoffee</title>
+    <link rel="stylesheet" type="text/css" href="style3.css">
+    <!-- Link para o Font Awesome (ícones) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Importação do jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <span class="logo">hotcoffe<a name="#home"></a></span>
+            <ul class="menu">
+                <li class="menu-item">
+                    <a href="index.html">Início</a>
+                </li>
+                <li class="menu-item">
+                    <a href='index.html'>Receitas</a>
+                </li>
+                <li class="menu-item active">
+                    <a href="Novidades.html">Novidades</a>
+                </li>
+                <li class="menu-item">
+                    <a href="melhor-avaliadas.html">Melhor avaliadas</a>
+                </li>
+            </ul>
+
+            <button class="btn-mobile">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+
+        <div class="menu-mobile">
+            <ul class="mobile-nav-list">
+                <li class="menu-item">
+                    <a href="index.html">Início</a>
+                </li>
+                <li class="menu-item">
+                    <a href='index.html'>Receitas</a>
+                </li>
+                <li class="menu-item active">
+                    <a href="Novidades.html">Novidades</a>
+                </li>
+                <li class="menu-item">
+                    <a href="melhor-avaliadas.html">Melhor avaliadas</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main class="content">
+        <!-- Receita 7: Café Vietnamita -->
+        <section class="receitas"> <a name="receitas"></a>
+            <div class="receitas-card-container" >
+                <div class="receitas-card">
+                    <header class="receitas-card-cabecalho">
+                        <div class="receitas-card-cabecalho-detalhes">
+                            <span class="destaque azul">novidade</span>
+                            <h3 class="receita-titulo">Café Vietnamita</h3>
+                        </div>
+                        <p class="receita-avaliacao">Doce e Forte</p>
+                    </header>
+                    <img class="receita-imagem" src="Café-vietnamita.png"/>
+                    <p class="receita-descricao">Café filtrado com leite condensado, uma delícia vietnamita.</p>
+                    <div class="receita-ingredientes">
+                        <h4>Ingredientes:</h4>
+                        <ul>
+                            <li>Café forte</li>
+                            <li>Leite condesado</li>
+                            <li>Gelo</li>
+                        </ul>
+                    </div>
+                    <div class="receita-preparo">
+                        <h4>Modo de Preparo:</h4>
+                        <ol>
+                            <li>Prepare uma dose de espresso.</li>
+                            <li>Vaporize o leite até ficar cremoso.</li>
+                            <li>Despeje o leite vaporizado sobre o espresso.</li>
+                            <li>Adicione a espuma de leite por cima.</li>
+                            <li>Polvilhe com chocolate em pó, se desejar.</li>
+                        </ol>
+                    </div>
+                    <div class="receita-autor">
+                        <img src="Avatar-3.jpg" />
+                        <span class="receita-autor-nome">Ana Paula</span>
+                    </div>
+                </div>
+            </div>
+
+        <!-- Receita 8: Café Cubano -->
+            <div class="receitas-card-container">
+                <div class="receitas-card">
+                    <header class="receitas-card-cabecalho">
+                        <div class="receitas-card-cabecalho-detalhes">
+                            <span class="destaque azul">novidade</span>
+                            <h3 class="receita-titulo">Café Cubano</h3>
+                        </div>
+                        <p class="receita-avaliacao">Doce e Intenso</p>
+                    </header>
+                    <img class="receita-imagem" src="Café-cubano.png"/>
+                    <p class="receita-descricao">Café forte e doce, tradicional de Cuba.</p>
+                    <div class="receita-ingredientes">
+                        <h4>Ingredientes:</h4>
+                        <ul>
+                            <li>Café espresso</li>
+                            <li>Açúcar</li>
+                        </ul>
+                    </div>
+                    <div class="receita-preparo">
+                        <h4>Modo de Preparo:</h4>
+                        <ol>
+                            <li>Prepare uma dose de espresso.</li>
+                            <li>Vaporize o leite até ficar cremoso.</li>
+                            <li>Despeje o leite vaporizado sobre o espresso.</li>
+                            <li>Adicione a espuma de leite por cima.</li>
+                            <li>Polvilhe com chocolate em pó, se desejar.</li>
+                        </ol>
+                    </div>
+                    <div class="receita-autor">
+                        <img src="Avatar-3.jpg" />
+                        <span class="receita-autor-nome">Carlos Perez</span>
+                    </div>
+                </div>
+            </div>
+
+        <!-- Receita 9: Café Árabe -->
+            <div class="receitas-card-container">
+                <div class="receitas-card">
+                    <header class="receitas-card-cabecalho">
+                        <div class="receitas-card-cabecalho-detalhes">
+                            <span class="destaque azul">novidade</span>
+                            <h3 class="receita-titulo">Café Árabe</h3>
+                        </div>
+                        <p class="receita-avaliacao">Aromático</p>
+                    </header>
+                    <img class="receita-imagem" src="Café-árabe.png"/>
+                    <p class="receita-descricao">Café preparado com especiarias, como cardamomo, para um sabor único. 🌿</p>
+                    <div class="receita-ingredientes">
+                        <h4>Ingredientes:</h4>
+                        <ul>
+                            <li>Café moído grosseiramente</li>
+                            <li>Cardamomo</li>
+                            <li>Água</li>
+                            <li>Açúcar</li>
+                        </ul>
+                    </div>
+                    <div class="receita-preparo">
+                        <h4>Modo de Preparo:</h4>
+                        <ol>
+                            <li>Prepare uma dose de espresso.</li>
+                            <li>Vaporize o leite até ficar cremoso.</li>
+                            <li>Despeje o leite vaporizado sobre o espresso.</li>
+                            <li>Adicione a espuma de leite por cima.</li>
+                            <li>Polvilhe com chocolate em pó, se desejar.</li>
+                        </ol>
+                    </div>
+                    <div class="receita-autor">
+                        <img src="Avatar-3.jpg" />
+                        <span class="receita-autor-nome">Mohamed Salah</span>
+                    </div>
+                </div>
+            </div>
+
+        <!-- Receita 10: Café Mexicano -->
+            <div class="receitas-card-container">
+                <div class="receitas-card">
+                    <header class="receitas-card-cabecalho">
+                        <div class="receitas-card-cabecalho-detalhes">
+                            <span class="destaque azul">novidade</span>
+                            <h3 class="receita-titulo">Café Mexicano</h3>
+                        </div>
+                        <p class="receita-avaliacao">Bom!</p>
+                    </header>
+                    <img class="receita-imagem" src="Café-mexicano.png"/>
+                    <p class="receita-descricao">Café com canela e chocolate, um toque mexicano.</p>
+                    <div class="receita-ingredientes">
+                        <h4>Ingredientes:</h4>
+                        <ul>
+                            <li>Café</li>
+                            <li>Açúcar mascavo</li>
+                            <li>Canela</li>
+                            <li>Água</li>
+                        </ul>
+                    </div>
+                    <div class="receita-preparo">
+                        <h4>Modo de Preparo:</h4>
+                        <ol>
+                            <li>Prepare uma dose de espresso.</li>
+                            <li>Vaporize o leite até ficar cremoso.</li>
+                            <li>Despeje o leite vaporizado sobre o espresso.</li>
+                            <li>Adicione a espuma de leite por cima.</li>
+                            <li>Polvilhe com chocolate em pó, se desejar.</li>
+                        </ol>
+                    </div>
+                    <div class="receita-autor">
+                        <img src="Avatar-3.jpg" />
+                        <span class="receita-autor-nome">Sofia Ramirez</span>
+                    </div>
+                </div>
+            </div>
+
+        <!-- Receita 11: Café Italiano -->
+            <div class="receitas-card-container">
+                <div class="receitas-card">
+                    <header class="receitas-card-cabecalho">
+                        <div class="receitas-card-cabecalho-detalhes">
+                            <span class="destaque azul">novidade</span>
+                            <h3 class="receita-titulo">Café Italiano</h3>
+                        </div>
+                        <p class="receita-avaliacao">Autêntico</p>
+                    </header>
+                    <img class="receita-imagem" src="Café-italiano.png"/>
+                    <p class="receita-descricao">Um espresso forte e encorpado, como na Itália.</p>
+                    <div class="receita-ingredientes">
+                        <h4>Ingredientes:</h4>
+                        <ul>
+                            <li>Café espresso</li>
+                            <li>Chocolate em pó</li>
+                            <li>Espuma de leite</li>
+                        </ul>
+                    </div>
+                    <div class="receita-preparo">
+                        <h4>Modo de Preparo:</h4>
+                        <ol>
+                            <li>Prepare uma dose de espresso.</li>
+                            <li>Vaporize o leite até ficar cremoso.</li>
+                            <li>Despeje o leite vaporizado sobre o espresso.</li>
+                            <li>Adicione a espuma de leite por cima.</li>
+                            <li>Polvilhe com chocolate em pó, se desejar.</li>
+                        </ol>
+                    </div>
+                    <div class="receita-autor">
+                        <img src="Avatar-3.jpg" />
+                        <span class="receita-autor-nome">Giovanni Rossi</span>
+                    </div>
+                </div>
+            </div>
+
+        <!-- Receita 12: Café Ethiopian -->
+            <div class="receitas-card-container">
+                <div class="receitas-card">
+                    <header class="receitas-card-cabecalho">
+                        <div class="receitas-card-cabecalho-detalhes">
+                            <span class="destaque azul">novidade</span>
+                            <h3 class="receita-titulo">Café Etiópia</h3>
+                        </div>
+                        <p class="receita-avaliacao">Muito bom!</p>
+                    </header>
+                    <img class="receita-imagem" src="Café-etiópia.png"/>
+                    <p class="receita-descricao">Café com notas frutadas e florais, típico da Etiópia.</p>
+                    <div class="receita-ingredientes">
+                        <h4>Ingredientes:</h4>
+                        <ul>
+                            <li>Café espresso</li>
+                            <li>Açúcar</li>
+                        </ul>
+                    </div>
+                    <div class="receita-preparo">
+                        <h4>Modo de Preparo:</h4>
+                        <ol>
+                            <li>Prepare uma dose de espresso.</li>
+                            <li>Vaporize o leite até ficar cremoso.</li>
+                            <li>Despeje o leite vaporizado sobre o espresso.</li>
+                            <li>Adicione a espuma de leite por cima.</li>
+                            <li>Polvilhe com chocolate em pó, se desejar.</li>
+                        </ol>
+                    </div>
+                    <div class="receita-autor">
+                        <img src="Avatar-3.jpg" />
+                        <span class="receita-autor-nome">João Gomes</span>
+                    </div>
+                </div>
+            </div>
+
+        <!-- Receita 13: Café Thai -->
+            <div class="receitas-card-container">
+                <div class="receitas-card">
+                    <header class="receitas-card-cabecalho">
+                        <div class="receitas-card-cabecalho-detalhes">
+                            <span class="destaque azul">novidade</span>
+                            <h3 class="receita-titulo">Café Tailandês</h3>
+                        </div>
+                        <p class="receita-avaliacao">Exótico</p>
+                    </header>
+                    <img class="receita-imagem" src="Café-tailandes.png" />
+                    <p class="receita-descricao">Café com leite condensado e especiarias, uma delícia tailandesa.</p>
+                    <div class="receita-ingredientes">
+                        <h4>Ingredientes:</h4>
+                        <ul>
+                            <li>Café espresso</li>
+                            <li>Açúcar</li>
+                        </ul>
+                    </div>
+                    <div class="receita-preparo">
+                        <h4>Modo de Preparo:</h4>
+                        <ol>
+                            <li>Prepare uma dose de espresso.</li>
+                            <li>Vaporize o leite até ficar cremoso.</li>
+                            <li>Despeje o leite vaporizado sobre o espresso.</li>
+                            <li>Adicione a espuma de leite por cima.</li>
+                            <li>Polvilhe com chocolate em pó, se desejar.</li>
+                        </ol>
+                    </div>
+                    <div class="receita-autor">
+                        <img src="Avatar-3.jpg" />
+                        <span class="receita-autor-nome">Sarah Rocha</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p class="footer-copy">Copyright 2025</p>
+        <div class="social-media-buttons">
+            <a href="">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+    
+            <a href="">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+    
+            <a href="">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

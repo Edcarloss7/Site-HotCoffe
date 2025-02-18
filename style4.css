@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500&family=Inter:opsz,wght@14..32,100..900&family=Montserrat:wght@100..900&family=Roboto:wght@700&family=Teko:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #1F1517;
+    color: #FFFFFF;
+}
+
+html {
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+}
+
+ul {
+    list-style: none;
+}
+
+.navbar {
+    max-width: 1280px;
+    margin: auto;
+    padding: 1.5rem 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: Teko;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    color: #FFF2E780;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: #FFF2E780;
+    cursor: pointer;
+}
+
+.menu-item.active a {
+    color:#ffffff;
+    border-bottom: 3px solid #e6421d;
+}
+
+.btn-mobile {
+    display: none;
+}
+
+.menu-mobile {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+    .btn-mobile {
+        display: block;
+        font-size: 1.5rem;
+        cursor: pointer;
+        position: absolute;
+        right: 15px;
+    }
+
+    .menu-mobile {
+        position: absolute;
+        top: 90px;
+        left: 0;
+        width: 100%;
+        background: #1F1517;
+        text-align: center;
+        display: none;
+        flex-direction: column;
+        padding: 20px;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .menu-mobile.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }   
+
+    .menu-mobile.active + .receitas {
+        margin-top: 150px; /* Ajuste conforme necessário */
+        transition: margin 0.3s ease-in-out;
+    }    
+
+    .mobile-nav-list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin: 12px 0px;
+    }
+
+    .mobile-nav-list .menu-item {
+        list-style: none;
+        text-align: center;
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: #181012;
+}
+
+.destaque {
+    font-family: Epilogue;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.marrom {
+    color: #A45A49;
+}
+
+.amarelo {
+    color: #E7A80E;
+}
+
+.azul {
+    color: #4169E1
+}
+
+/* Estilos gerais */
+.receitas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espaçamento entre os cards */
+    justify-content: center; /* Centraliza os cards na página */
+    padding: 20px;
+}
+
+.receitas-card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaçamento entre os cards */
+    width: 40%;
+    margin: 10px;
+}
+
+.receitas-card {
+    display: flex;
+    width: 400px; /* Largura fixa */
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #241A1C;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px;
+}
+
+.receitas-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+/* Estilos internos dos cards */
+.receitas-card-cabecalho {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #241A1C;
+}
+
+.receitas-card-cabecalho-detalhes {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 0.5rem;
+}
+
+.receita-titulo {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+.receita-avaliacao {
+    font-size: 1rem;
+    color: #786A67;
+}
+
+.receita-imagem {
+    width: 150px;
+    height: 150px;
+}
+
+.receita-descricao {
+    padding: 15px;
+    font-size: 1rem;
+    color: #C7BAB3;
+    line-height: 1.5;
+}
+
+/* Estilos para a seção de ingredientes e preparo */
+.receita-ingredientes, .receita-preparo {
+    max-height: 0; /* Esconde os ingredientes e preparo inicialmente */
+    overflow: hidden;
+    transition: max-height 0.5s ease, padding 0.5s ease;
+    padding: 0 15px;
+    background-color: #241A1C;
+}
+
+.receita-preparo h4 {
+    margin-top: 0;
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+
+.receita-ingredientes ul {
+    padding-left: 25px;
+}
+
+.receita-ingredientes li {
+    font-size: 0.9rem;
+    list-style: disc;
+}
+
+.receita-preparo ol {
+    margin: 0;
+    padding-left: 25px;
+    list-style-type: decimal;
+}
+
+.receita-preparo li {
+    font-size: 0.9rem;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.receitas-card.active .receita-ingredientes,
+.receitas-card.active .receita-preparo {
+    max-height: 500px; /* Altura máxima para exibir os ingredientes e preparo */
+    padding: 15px; /* Adiciona padding ao exibir */
+}
+
+.receita-autor {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: #241A1C;
+}
+
+.receita-autor img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.receita-autor-nome {
+    font-size: 0.9rem;
+    color: #C7BAB3;
+}
+
+footer {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    background: #23181A;
+}
+
+.footer-copy {
+    color: #FFF2E7;
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.social-media-buttons {
+    display: flex;
+    gap: 18px;
+}
+
+.social-media-buttons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 40px;
+    font-size: 1.50rem;
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--color-neutral-1);
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow .3s ease;
+}
+
+.social-media-buttons a:hover {
+    box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Queries para Responsividade */
+
+/* Tablets */
+@media (max-width: 768px) {
+    .receitas-card-container {
+        width: 100%; /* Cards ocupam 100% da largura em tablets */
+    }
+
+    .receitas-card {
+        width: calc(50% - 20px); /* Dois cards por linha */
+    }
+
+    .receitas-titulo {
+        font-size: 1.75rem; /* Reduz o tamanho da fonte */
+    }
+
+    .receita-titulo {
+        font-size: 1.25rem;
+    }
+}
+
+/* Smartphones */
+@media (max-width: 480px) {
+    
+    .receitas-card {
+        width: 100%; /* Um card por linha em smartphones */
+    }
+
+    .receitas-titulo {
+        font-size: 1.5rem; /* Reduz ainda mais o tamanho da fonte */
+    }
+
+    .receita-titulo {
+        font-size: 1.1rem;
+    }
+
+    .receita-imagem {
+        width: 80px;
+        height: 80px;
+    }
+
+    .receita-descricao {
+        font-size: 0.9rem;
+    }
+
+    footer {
+        padding: 2rem; /* Reduz o padding no footer */
+    }
+}

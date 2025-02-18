@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HotCoffee</title>
+    <meta name="description" content="Explore dezenas de variações da bebida favorita entre os devs ao redor mundo!">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Link para o Font Awesome (ícones) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Importação do jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <span class="logo">hotcoffe<a name="#home"></a></span>
+            <ul class="menu">
+                <li class="menu-item active">
+                    <a href="index.html">Início</a>
+                </li>
+                <li class="menu-item">
+                    <a href='#receitas'>Receitas</a>
+                </li>
+                <li class="menu-item">
+                    <a href="Novidades.html">Novidades</a>
+                </li>
+                <li class="menu-item">
+                    <a href="melhor-avaliadas.html">Melhor avaliadas</a>
+                </li>
+            </ul>
+
+            <button class="btn-mobile">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+
+        <div class="menu-mobile">
+            <ul class="mobile-nav-list">
+                <li class="menu-item active">
+                    <a href="index.html">Início</a>
+                </li>
+                <li class="menu-item">
+                    <a href='#receitas'>Receitas</a>
+                </li>
+                <li class="menu-item">
+                    <a href="Novidades.html">Novidades</a>
+                </li>
+                <li class="menu-item">
+                    <a href="melhor-avaliadas.html">Melhor avaliadas</a>
+                </li>
+            </ul>
+        </div>
+
+    </header>
+    <main id="content">
+        <div class="principal">
+            <section class="hero">
+                <header class="hero-conteudo">
+                    <span class="destaque marrom">novidade</span>
+                    <h1>Encontre a receita perfeita</h1>
+                    <hr/>
+                    <h2 class="hero-subtitulo">Explore dezenas de variações da bebida favorita entre os devs ao redor
+                        mundo!</h2>
+                </header>
+                <div class="hero-imagens-container">
+                    <figure><img src="hero-banner-1.png" /></figure>
+                    <figure><img src="hero-banner-2.png" /></figure>
+                    <figure><img src="hero-banner-3.png" /></figure>
+                    <figure><img src="hero-banner-4.png" /></figure>
+                    <figure><img src="hero-banner-5.png" /></figure>
+                    <figure><img src="hero-banner-6.png" /></figure>
+                    <figure><img src="hero-banner-7.png" /></figure>
+                    <figure><img src="hero-banner-8.png" /></figure>
+                    <figure><img src="hero-banner-9.png" /></figure>
+                    <figure><img src="hero-banner-10.png" /></figure>
+                    <figure><img src="hero-banner-11.png" /></figure>
+                    <figure><img src="hero-banner-12.png" /></figure>
+                </div>
+            </section>
+        </div>
+
+        <section class="receitas"> <a name="receitas"></a>
+            <header class="receitas-cabecalho">
+                <span class="destaque marrom">receitas</span>
+                <h2 class="receitas-titulo">Confira as últimas receitas</h2>
+                <p class="receitas-subtitulo">Dê uma olhada nas receitas mais amadas!</p>
+            </header>
+        </section>
+        <section class="receitas-2">
+            <div class="receitas-card-container">
+                <div class="receitas-card">
+                    <header class="receitas-card-cabecalho">
+                        <div class="receitas-card-cabecalho-detalhes">
+                            <span class="destaque amarelo">em alta 🔥</span>
+                            <h3 class="receita-titulo">Cappuccino</h3>
+                        </div>
+                        <p class="receita-avaliacao">Extraordinário!</p>
+                    </header>
+                    <img class="receita-imagem" src="Cappuccino.png" />
+                    <p class="receita-descricao">Uma bebida ideal para os amantes de doce e cremosidade. 😍</p>
+
+                    <div class="receita-ingredientes">
+                        <h4>Ingredientes:</h4>
+                        <ul>
+                            <li>1 dose de espresso</li>
+                            <li>100ml de leite vaporizado</li>
+                            <li>Espuma de leite</li>
+                            <li>Chocolate em pó (opcional)</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="receita-preparo">
+                        <h4>Modo de Preparo:</h4>
+                        <ol>
+                            <li>Prepare uma dose de espresso.</li>
+                            <li>Vaporize o leite até ficar cremoso.</li>
+                            <li>Despeje o leite vaporizado sobre o espresso.</li>
+                            <li>Adicione a espuma de leite por cima.</li>
+                            <li>Polvilhe com chocolate em pó, se desejar.</li>
+                        </ol>
+                    </div>
+
+                    <div class="receita-autor">
+                        <img src="Avatar-3.jpg" />
+                        <span class="receita-autor-nome">Rafaella Ballerini</span>
+                    </div>
+                </div>
+            </div>
+            <div class="receitas-card-container">
+                <div class="receitas-card">
+                    <header class="receitas-card-cabecalho">
+                        <div class="receitas-card-cabecalho-detalhes">
+                            <span class="destaque amarelo">em alta 🔥</span>
+                            <h3 class="receita-titulo">Expresso</h3>
+                        </div>
+                        <p class="receita-avaliacao">Muito bom!</p>
+                    </header>
+                    <img class="receita-imagem" src="Expresso.png" />
+                    <p class="receita-descricao">Uma bebida ideal para os amantes de doce e cremosidade. 😍</p>
+
+                    <div class="receita-ingredientes">
+                        <h4>Ingredientes:</h4>
+                        <ul>
+                            <li>Café moído fino</li>
+                            <li>Água quente</li>
+                        </ul>
+                    </div>
+                    <div class="receita-preparo">
+                        <h4>Modo de Preparo:</h4>
+                        <ol>
+                            <li>Use uma máquina de espresso.</li>
+                            <li>Compacte o café moído no porta-filtro.</li>
+                            <li>Encaixe o porta-filtro na máquina e inicie a extração.</li>
+                            <li>O espresso deve sair em 25-30 segundos, com uma camada de creme no topo.</li>
+                        </ol>
+                    </div>
+                    <div class="receita-autor">
+                        <img src="Avatar-3.jpg" />
+                        <span class="receita-autor-nome">Paulo Silva</span>
+                    </div>
+                </div>
+            </div>
+            <div class="receitas-card-container">
+                <div class="receitas-card">
+                    <header class="receitas-card-cabecalho">
+                        <div class="receitas-card-cabecalho-detalhes">
+                            <span class="destaque amarelo">em alta 🔥</span>
+                            <h3 class="receita-titulo">Machiatto</h3>
+                        </div>
+                        <p class="receita-avaliacao">Extraordinário</p>
+                    </header>
+                    <img class="receita-imagem" src="Macchiato.png" />
+                    <p class="receita-descricao">Uma bebida para quem gosta de cremosidade.</p>
+                    <div class="receita-ingredientes">
+                        <h4>Ingredientes:</h4>
+                        <ul>
+                            <li>Café espresso</li>
+                            <li>100ml de leite vaporizado ou espuma</li>
+                        </ul>
+                    </div>
+                    <div class="receita-preparo">
+                        <h4>Modo de Preparo:</h4>
+                        <ol>
+                            <li>Prepare uma dose de espresso.</li>
+                            <li>Adicione uma pequena quantidade de 
+                                espuma de leite sobre o espresso.</li>
+                        </ol>
+                    </div>
+                    <div class="receita-autor">
+                        <img src="Avatar.png" />
+                        <span class="receita-autor-nome">Ana Maria</span>
+                    </div>
+                </div>
+            </div>
+            <div class="receitas-card-container">
+                <div class="receitas-card">
+                    <header class="receitas-card-cabecalho">
+                        <div class="receitas-card-cabecalho-detalhes">
+                            <span class="destaque amarelo">em alta 🔥</span>
+                            <h3 class="receita-titulo">Café mocha</h3>
+                        </div>
+                        <p class="receita-avaliacao">Bom</p>
+                    </header>
+                    <img class="receita-imagem" src="Mocha.png" />
+                    <p class="receita-descricao">Um café para quem é fã de chocolate. ☕🍫</p>
+
+                    <div class="receita-ingredientes">
+                        <h4>Ingredientes:</h4>
+                        <ul>
+                            <li>Café espresso</li>
+                            <li>Leite vaporizado</li>
+                            <li>Chocolate (em pó ou calda)</li>
+                            <li>Chantilly (opcional)</li>
+                            <li>Cacau (opcional)</li>
+                        </ul>
+                    </div>
+                    <div class="receita-preparo">
+                        <h4>Modo de Preparo:</h4>
+                        <ol>
+                            <li>Misture o chocolate com o espresso até dissolver.</li>
+                            <li>Vaporize o leite e adicione à mistura de café e chocolate.</li>
+                            <li>Finalize com chantilly e uma pitada de cacau.</li>
+                        </ol>
+                    </div>
+                    <div class="receita-autor">
+                        <img src="Avatar-2.jpg" />
+                        <span class="receita-autor-nome">Thiago Veigh</span>
+                    </div>
+                </div>
+            </div>
+            <div class="receitas-card-container">
+                <div class="receitas-card">
+                    <header class="receitas-card-cabecalho">
+                        <div class="receitas-card-cabecalho-detalhes">
+                            <span class="destaque amarelo">em alta 🔥</span>
+                            <h3 class="receita-titulo">Café gelado</h3>
+                        </div>
+                        <p class="receita-avaliacao">Bom</p>
+                    </header>
+                    <img class="receita-imagem" src="Café-gelado.png" />
+                    <p class="receita-descricao">Essa é uma bebida refrescante e energizante, perfeita para os dias quentes.</p>
+                    <div class="receita-ingredientes">
+                        <h4>Ingredientes:</h4>
+                        <ul>
+                            <li>Café forte</li>
+                            <li>Gelo</li>
+                            <li>Leite ou creme (opcional)</li>
+                            <li>Açúcar (opcional)</li>
+                        </ul>
+                    </div>
+                    <div class="receita-preparo active">
+                        <h4>Modo de Preparo:</h4>
+                        <ol>
+                            <li>Prepare um café forte e deixe esfriar.</li>
+                            <li>Encha um copo com gelo.</li>
+                            <li>Despeje o café sobre o gelo e adicione leite ou creme, se desejar.</li>
+                        </ol>
+                    </div>
+                    <div class="receita-autor">
+                        <img src="Avatar-3.jpg" />
+                        <span class="receita-autor-nome">Caio Luccas</span>
+                    </div>
+                </div>
+            </div>
+            <div class="receitas-card-container">
+                <div class="receitas-card">
+                    <header class="receitas-card-cabecalho">
+                        <div class="receitas-card-cabecalho-detalhes">
+                            <span class="destaque amarelo">em alta 🔥</span>
+                            <h3 class="receita-titulo">Caffè latte</h3>
+                        </div>
+                        <p class="receita-avaliacao">Muito Bom!</p>
+                    </header>
+                    <img class="receita-imagem" src="Latte.png" />
+                    <p class="receita-descricao">Café feito para quem gosta de leite vaporizado e cremosidade. ☕🥛</p>
+                    <div class="receita-ingredientes">
+                        <h4>Ingredientes:</h4>
+                        <ul>
+                            <li>Café espresso</li>
+                            <li>leite vaporizado</li>
+                        </ul>
+                    </div>
+                    <div class="receita-preparo">
+                        <h4>Modo de Preparo:</h4>
+                        <ol>
+                            <li>Comece preparando o café expresso da maneira que preferir, mas extraia cerca de 30 ml para que o café ocupe 1/3 da xícara.</li>
+                            <li>Se desejar, adoce a bebida com açúcar.</li>
+                            <li>Enquanto isso, vaporize o leite com um espumador de leite, um mixer ou até mesmo com uma prensa francesa.</li>
+                            <li>Adicione o café em uma xícara e então acrescente o leite de forma inclinada para que a parte mais líquida caia primeiro.</li>
+                            <li>Agora é só derramar a espuma do leite e se você quiser, finalizar com a latte art, ou seja, algum tipo de desenho usando o próprio leite.</li>
+                        </ol>
+                    </div>
+                    <div class="receita-autor">
+                        <img src="Avatar-3.jpg" />
+                        <span class="receita-autor-nome">Carlos Moura</span>
+                    </div>
+                </div>
+            </div>
+            <div class="mais-receitas">
+                <a href="mais-receitas.html">Carregar mais receitas</a>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <p class="footer-copy">Copyright 2025</p>
+        <div class="social-media-buttons">
+            <a href="">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+    
+            <a href="">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+    
+            <a href="">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
